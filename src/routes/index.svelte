@@ -12,10 +12,12 @@
 
 <script>
     import PopularMovies from '../components/PopularMovies.svelte'
+    import SearchMovies from '../components/SearchMovies.svelte';
     export let popular;
-    import global from '../global.css'
+    
 </script>
 
 <main>
+    <SearchMovies />
     <PopularMovies {popular}/>
 </main>
